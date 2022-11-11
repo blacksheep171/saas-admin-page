@@ -1,0 +1,33 @@
+{
+  "name": "remark-generator",
+  "version": "3.0.0",
+  "description": "A command line tool for creating remark project",
+  "main": "index.js",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "generate": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/thecreation/remark-build/issues"
+  },
+  "homepage": "https://github.com/thecreation/remark-build#readme",
+  "dependencies": {
+    "applause": "*",
+    "bluebird": "*",
+    "commander": "*",
+    "extend": "*",
+    "fs-extra": "*",
+    "fs-extra-promise": "*",
+    "globby": "*",
+    "inquirer": "^6.5.0",
+    "load-json-file": "*",
+    "preprocess": "*",
+    "phantomjs-prebuilt": "^2.1.16",
+    "require-folder-tree": "*",
+    "treeify": "*",
+    "write-json-file": "*"
+  }
+}
