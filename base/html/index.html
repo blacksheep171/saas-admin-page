@@ -8,17 +8,13 @@
       user-scalable=0, minimal-ui">
     <meta name="description" content="bootstrap admin template">
     <meta name="author" content="">
-
     <title>Dashboard | Remark Admin Template</title>
-
     <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../../global/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../global/css/bootstrap-extend.min.css">
     <link rel="stylesheet" href="../assets/css/site.min.css">
-
     <!-- Plugins -->
     <link rel="stylesheet" href="../../global/vendor/animsition/animsition.css">
     <link rel="stylesheet"
@@ -34,8 +30,6 @@
     <link rel="stylesheet"
       href="../../global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
     <link rel="stylesheet" href="../assets/examples/css/dashboard/v1.css">
-
-
     <!-- Fonts -->
     <link rel="stylesheet"
       href="../../global/fonts/weather-icons/weather-icons.css">
@@ -45,23 +39,13 @@
       href="../../global/fonts/brand-icons/brand-icons.min.css">
     <link rel='stylesheet'
       href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
-    <!--[if lt IE 9]>
-    <script src="../../global/vendor/html5shiv/html5shiv.min.js"></script>
-    <![endif]-->
-    <!--[if lt IE 10]>
-    <script src="../../global/vendor/media-match/media.match.min.js"></script>
-    <script src="../../global/vendor/respond/respond.min.js"></script>
-    <![endif]-->
-    <!-- Scripts -->
     <script src="../../global/vendor/breakpoints/breakpoints.js"></script>
     <script>
       Breakpoints();
     </script>
+   
   </head>
   <body class="animsition dashboard">
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
     <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega"
       role="navigation">
 
@@ -366,31 +350,6 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#"
-                aria-expanded="false"
-                data-animation="scale-up" role="button">
-                <span class="avatar avatar-online">
-                  <img src="../../global/portraits/5.jpg" alt="...">
-                  <i></i>
-                </span>
-              </a>
-              <div class="dropdown-menu" role="menu">
-                <a class="dropdown-item" href="javascript:void(0)"
-                  role="menuitem"><i class="icon wb-user" aria-hidden="true"></i>
-                  Profile</a>
-                <a class="dropdown-item" href="javascript:void(0)"
-                  role="menuitem"><i class="icon wb-payment" aria-hidden="true"></i>
-                  Billing</a>
-                <a class="dropdown-item" href="javascript:void(0)"
-                  role="menuitem"><i class="icon wb-settings"
-                    aria-hidden="true"></i> Settings</a>
-                <div class="dropdown-divider" role="presentation"></div>
-                <a class="dropdown-item" href="javascript:void(0)"
-                  role="menuitem"><i class="icon wb-power" aria-hidden="true"></i>
-                  Logout</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
               <a class="nav-link" data-toggle="dropdown"
                 href="javascript:void(0)" title="Notifications"
                 aria-expanded="false" data-animation="scale-up" role="button">
@@ -547,7 +506,7 @@
                               <time datetime="2018-06-17T12:30:30+08:00">12
                                 hours ago</time>
                             </div>
-                            <div class="media-detail">I checheck the document.
+                            <div class="media-detail">I check the document.
                               But there seems</div>
                           </div>
                         </div>
@@ -609,19 +568,37 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item" id="toggleChat">
-              <a class="nav-link" data-toggle="site-sidebar"
-                href="javascript:void(0)" title="Chat"
-                data-url="site-sidebar.tpl">
-                <i class="icon wb-chat" aria-hidden="true"></i>
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#"
+                aria-expanded="false"
+                data-animation="scale-up" role="button">
+                <span class="avatar avatar-online">
+                  <img src="../../global/portraits/5.jpg" alt="...">
+                  <i></i>
+                </span>
               </a>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="javascript:void(0)"
+                  role="menuitem"><i class="icon wb-user" aria-hidden="true"></i>
+                  Profile</a>
+                <a class="dropdown-item" href="javascript:void(0)"
+                  role="menuitem"><i class="icon wb-payment" aria-hidden="true"></i>
+                  Billing</a>
+                <a class="dropdown-item" href="javascript:void(0)"
+                  role="menuitem"><i class="icon wb-settings"
+                    aria-hidden="true"></i> Settings</a>
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item" href="javascript:void(0)"
+                  role="menuitem"><i class="icon wb-power" aria-hidden="true"></i>
+                  Logout</a>
+              </div>
             </li>
           </ul>
           <!-- End Navbar Toolbar Right -->
         </div>
         <!-- End Navbar Collapse -->
 
-        <!-- Site Navbar Seach -->
+        <!-- Site Navbar Search -->
         <div class="collapse navbar-search-overlap" id="site-navbar-search">
           <form role="search">
             <div class="form-group">
@@ -636,7 +613,7 @@
             </div>
           </form>
         </div>
-        <!-- End Site Navbar Seach -->
+        <!-- End Site Navbar Search -->
       </div>
     </nav> <div class="site-menubar">
       <div class="site-menubar-body">
@@ -657,6 +634,7 @@
                   </li>
                 </ul>
               </li>
+              <!-- Users -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
@@ -703,643 +681,192 @@
                   </li>
                 </ul>
               </li>
+              <!-- End Users Navbar -->
+              <!-- Listings -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon wb-file" aria-hidden="true"></i>
-                  <span class="site-menu-title">Pages</span>
+                  <span class="site-menu-title">Listings</span>
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
-                  <li class="site-menu-item has-sub">
-                    <a href="javascript:void(0)">
-                      <span class="site-menu-title">Errors</span>
-                      <span class="site-menu-arrow"></span>
-                    </a>
-                    <ul class="site-menu-sub">
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/error-400.html">
-                          <span class="site-menu-title">400 Bad Request</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/error-403.html">
-                          <span class="site-menu-title">403 Forbidden</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/error-404.html">
-                          <span class="site-menu-title">404 Not Found</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/error-500.html">
-                          <span class="site-menu-title">500 Internal Server
-                            Error</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/error-503.html">
-                          <span class="site-menu-title">503 Service Unavailable</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="pages/faq.html">
-                      <span class="site-menu-title">FAQ</span>
+                      <span class="site-menu-title">Manage Listings</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="pages/gallery.html">
-                      <span class="site-menu-title">Gallery</span>
+                      <span class="site-menu-title"> Listing Seller </span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="pages/gallery-grid.html">
-                      <span class="site-menu-title">Gallery Grid</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/search-result.html">
-                      <span class="site-menu-title">Search Result</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item has-sub">
-                    <a href="javascript:void(0)">
-                      <span class="site-menu-title">Maps</span>
-                      <span class="site-menu-arrow"></span>
-                    </a>
-                    <ul class="site-menu-sub">
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/map-google.html">
-                          <span class="site-menu-title">Google Maps</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/map-vector.html">
-                          <span class="site-menu-title">Vector Maps</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/maintenance.html">
-                      <span class="site-menu-title">Maintenance</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="pages/forgot-password.html">
-                      <span class="site-menu-title">Forgot Password</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/lockscreen.html">
-                      <span class="site-menu-title">Lockscreen</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/login.html">
-                      <span class="site-menu-title">Login</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/register.html">
-                      <span class="site-menu-title">Register</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/login-v2.html">
-                      <span class="site-menu-title">Login V2</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/register-v2.html">
-                      <span class="site-menu-title">Register V2</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/login-v3.html">
-                      <span class="site-menu-title">Login V3</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/register-v3.html">
-                      <span class="site-menu-title">Register V3</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/user.html">
-                      <span class="site-menu-title">User List</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/invoice.html">
-                      <span class="site-menu-title">Invoice</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/blank.html">
-                      <span class="site-menu-title">Blank Page</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item has-sub">
-                    <a href="javascript:void(0)">
-                      <span class="site-menu-title">Email</span>
-                      <span class="site-menu-arrow"></span>
-                    </a>
-                    <ul class="site-menu-sub">
-                      <li class="site-menu-item">
-                        <a class="animsition-link"
-                          href="pages/email-articles.html">
-                          <span class="site-menu-title">Articles</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link"
-                          href="pages/email-welcome.html">
-                          <span class="site-menu-title">Welcome</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/email-post.html">
-                          <span class="site-menu-title">Post</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link"
-                          href="pages/email-thumbnail.html">
-                          <span class="site-menu-title">Thumbnail</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="pages/email-news.html">
-                          <span class="site-menu-title">News</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/code-editor.html">
-                      <span class="site-menu-title">Code Editor</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/profile.html">
-                      <span class="site-menu-title">Profile</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/profile-v2.html">
-                      <span class="site-menu-title">Profile V2</span>
-                      <div class="site-menu-label">
-                        <span class="badge badge-info badge-round">new</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/profile-v3.html">
-                      <span class="site-menu-title">Profile V3</span>
-                      <div class="site-menu-label">
-                        <span class="badge badge-info badge-round">new</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/site-map.html">
-                      <span class="site-menu-title">Sitemap</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="pages/project.html">
-                      <span class="site-menu-title">Project</span>
-                      <div class="site-menu-label">
-                        <span class="badge badge-info badge-round">new</span>
-                      </div>
+                      <span class="site-menu-title">Market Boss >> Interested Listings</span>
                     </a>
                   </li>
                 </ul>
               </li>
-              <!-- <li class="site-menu-category">Elements</li>  -->
+              <!-- End Listings Navbar -->
+              <!-- Templates -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
-                  <span class="site-menu-title">Basic UI</span>
+                  <span class="site-menu-title">Templates</span>
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
-                  <li class="site-menu-item has-sub">
-                    <a href="javascript:void(0)">
-                      <span class="site-menu-title">Panel</span>
-                      <span class="site-menu-arrow"></span>
-                    </a>
-                    <ul class="site-menu-sub">
-                      <li class="site-menu-item">
-                        <a class="animsition-link"
-                          href="uikit/panel-structure.html">
-                          <span class="site-menu-title">Panel Structure</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link"
-                          href="uikit/panel-actions.html">
-                          <span class="site-menu-title">Panel Actions</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link"
-                          href="uikit/panel-portlets.html">
-                          <span class="site-menu-title">Panel Portlets</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="uikit/buttons.html">
-                      <span class="site-menu-title">Buttons</span>
+                      <span class="site-menu-title">Message templates</span>
                     </a>
                   </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/cards.html">
-                      <span class="site-menu-title">Cards</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/dropdowns.html">
-                      <span class="site-menu-title">Dropdowns</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/icons.html">
-                      <span class="site-menu-title">Icons</span>
-                    </a>
-                  </li>
+                  
                   <li class="site-menu-item">
                     <a class="animsition-link" href="uikit/list.html">
-                      <span class="site-menu-title">List</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="uikit/tooltip-popover.html">
-                      <span class="site-menu-title">Tooltip &amp; Popover</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/modals.html">
-                      <span class="site-menu-title">Modals</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="uikit/tabs-accordions.html">
-                      <span class="site-menu-title">Tabs &amp; Accordions</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/images.html">
-                      <span class="site-menu-title">Images</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/badges.html">
-                      <span class="site-menu-title">Badges</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/progress-bars.html">
-                      <span class="site-menu-title">Progress Bars</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/carousel.html">
-                      <span class="site-menu-title">Carousel</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/typography.html">
-                      <span class="site-menu-title">Typography</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/colors.html">
-                      <span class="site-menu-title">Colors</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="uikit/utilities.html">
-                      <span class="site-menu-title">Utilties</span>
+                      <span class="site-menu-title">Notification templates</span>
                     </a>
                   </li>
                 </ul>
               </li>
+             <!--  End Templates Navbar -->
+             <!-- System -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon wb-hammer" aria-hidden="true"></i>
-                  <span class="site-menu-title">Advanced UI</span>
+                  <span class="site-menu-title">System</span>
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item hidden-sm-down site-tour-trigger">
                     <a href="javascript:void(0)">
-                      <span class="site-menu-title">Tour</span>
+                      <span class="site-menu-title">Settings</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="advanced/animation.html">
-                      <span class="site-menu-title">Animation</span>
+                      <span class="site-menu-title">Cache</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="advanced/highlight.html">
-                      <span class="site-menu-title">Highlight</span>
+                      <span class="site-menu-title">Session</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="advanced/lightbox.html">
-                      <span class="site-menu-title">Lightbox</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="advanced/scrollable.html">
-                      <span class="site-menu-title">Scrollable</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="advanced/rating.html">
-                      <span class="site-menu-title">Rating</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="advanced/context-menu.html">
-                      <span class="site-menu-title">Context Menu</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="advanced/alertify.html">
-                      <span class="site-menu-title">Alertify</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="advanced/masonry.html">
-                      <span class="site-menu-title">Masonry</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="advanced/treeview.html">
-                      <span class="site-menu-title">Treeview</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="advanced/toastr.html">
-                      <span class="site-menu-title">Toastr</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="advanced/maps-vector.html">
-                      <span class="site-menu-title">Vector Maps</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="advanced/maps-google.html">
-                      <span class="site-menu-title">Google Maps</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="advanced/sortable-nestable.html">
-                      <span class="site-menu-title">Sortable &amp; Nestable</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="advanced/bootbox-sweetalert.html">
-                      <span class="site-menu-title">Bootbox &amp; Sweetalert</span>
+                      <span class="site-menu-title">Phpinfo</span>
                     </a>
                   </li>
                 </ul>
               </li>
+              <!-- End System Navbar -->
+              <!-- Utils -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon wb-plugin" aria-hidden="true"></i>
-                  <span class="site-menu-title">Structure</span>
+                  <span class="site-menu-title">Utils</span>
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
                     <a class="animsition-link" href="structure/alerts.html">
-                      <span class="site-menu-title">Alerts</span>
+                      <span class="site-menu-title">Base 64 </span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="structure/ribbon.html">
-                      <span class="site-menu-title">Ribbon</span>
+                      <span class="site-menu-title">UI Manager - Generate URL</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link"
                       href="structure/pricing-tables.html">
-                      <span class="site-menu-title">Pricing Tables</span>
+                      <span class="site-menu-title">UI Manager - Calendar </span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="structure/overlay.html">
-                      <span class="site-menu-title">Overlay</span>
+                      <span class="site-menu-title">UI Manager - Master Template </span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="structure/cover.html">
-                      <span class="site-menu-title">Cover</span>
+                      <span class="site-menu-title">Features - Manage</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link"
                       href="structure/timeline-simple.html">
-                      <span class="site-menu-title">Simple Timeline</span>
+                      <span class="site-menu-title">Features - Manage Invitation Code</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="structure/timeline.html">
-                      <span class="site-menu-title">Timeline</span>
+                      <span class="site-menu-title">Features - Generate Invitation Code </span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="structure/step.html">
-                      <span class="site-menu-title">Step</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="structure/comments.html">
-                      <span class="site-menu-title">Comments</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="structure/media.html">
-                      <span class="site-menu-title">Media</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="structure/chat.html">
-                      <span class="site-menu-title">Chat</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="structure/testimonials.html">
-                      <span class="site-menu-title">Testimonials</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="structure/nav.html">
-                      <span class="site-menu-title">Nav</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="structure/navbars.html">
-                      <span class="site-menu-title">Navbars</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="structure/blockquotes.html">
-                      <span class="site-menu-title">Blockquotes</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="structure/pagination.html">
-                      <span class="site-menu-title">Pagination</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link"
-                      href="structure/breadcrumbs.html">
-                      <span class="site-menu-title">Breadcrumbs</span>
+                      <span class="site-menu-title">Features - Bulk Invitation RF</span>
                     </a>
                   </li>
                 </ul>
               </li>
+              <!-- End Utils Navbar -->
+              <!-- SignUp -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
-                  <i class="site-menu-icon wb-extension" aria-hidden="true"></i>
-                  <span class="site-menu-title">Widgets</span>
+                  <i class="site-menu-icon wb-unlock" aria-hidden="true"></i>
+                  <span class="site-menu-title">Sign Up</span>
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="widgets/statistics.html">
-                      <span class="site-menu-title">Statistics Widgets</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
                     <a class="animsition-link" href="widgets/data.html">
-                      <span class="site-menu-title">Data Widgets</span>
+                      <span class="site-menu-title">Manage</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="widgets/blog.html">
-                      <span class="site-menu-title">Blog Widgets</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="widgets/chart.html">
-                      <span class="site-menu-title">Chart Widgets</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="widgets/social.html">
-                      <span class="site-menu-title">Social Widgets</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="widgets/weather.html">
-                      <span class="site-menu-title">Weather Widgets</span>
+                      <span class="site-menu-title">Newsleter</span>
                     </a>
                   </li>
                 </ul>
               </li>
+              <!-- End SignUp Navbar -->
+              <!-- Service -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon wb-library" aria-hidden="true"></i>
-                  <span class="site-menu-title">Forms</span>
+                  <span class="site-menu-title">Service</span>
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
                     <a class="animsition-link" href="forms/general.html">
-                      <span class="site-menu-title">General Elements</span>
+                      <span class="site-menu-title">Service Management</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="forms/material.html">
-                      <span class="site-menu-title">Material Elements</span>
+                      <span class="site-menu-title">Quick Order Management</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="forms/advanced.html">
-                      <span class="site-menu-title">Advanced Elements</span>
+                      <span class="site-menu-title">Order Management</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="forms/layouts.html">
-                      <span class="site-menu-title">Form Layouts</span>
-                      <div class="site-menu-label">
-                        <span class="badge badge badge-warning badge-round">new</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="forms/wizard.html">
-                      <span class="site-menu-title">Form Wizard</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="forms/validation.html">
-                      <span class="site-menu-title">Form Validation</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="forms/masks.html">
-                      <span class="site-menu-title">Form Masks</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item has-sub">
-                    <a href="javascript:void(0)">
-                      <span class="site-menu-title">Editors</span>
-                      <span class="site-menu-arrow"></span>
-                    </a>
-                    <ul class="site-menu-sub">
-                      <li class="site-menu-item">
-                        <a class="animsition-link"
-                          href="forms/editor-summernote.html">
-                          <span class="site-menu-title">Summernote</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link"
-                          href="forms/editor-markdown.html">
-                          <span class="site-menu-title">Markdown</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="forms/editor-ace.html">
-                          <span class="site-menu-title">Ace Editor</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="forms/image-cropping.html">
-                      <span class="site-menu-title">Image Cropping</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="forms/file-uploads.html">
-                      <span class="site-menu-title">File Uploads</span>
+                      <span class="site-menu-title">Settings</span>
                     </a>
                   </li>
                 </ul>
               </li>
+              <!-- End Service Navbar -->
+              <!-- Tables -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon wb-table" aria-hidden="true"></i>
@@ -1348,122 +875,231 @@
                 </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/basic.html">
-                      <span class="site-menu-title">Basic Tables</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/bootstrap.html">
-                      <span class="site-menu-title">Bootstrap Tables</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/floatthead.html">
-                      <span class="site-menu-title">floatThead</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/responsive.html">
-                      <span class="site-menu-title">Responsive Tables</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/editable.html">
-                      <span class="site-menu-title">Editable Tables</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
                     <a class="animsition-link" href="tables/jsgrid.html">
                       <span class="site-menu-title">jsGrid</span>
                     </a>
                   </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/footable.html">
-                      <span class="site-menu-title">FooTable</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/datatable.html">
-                      <span class="site-menu-title">DataTables</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/jqtabledit.html">
-                      <span class="site-menu-title">Jquery Tabledit</span>
-                      <div class="site-menu-label">
-                        <span class="badge badge badge-info badge-round">new</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="tables/table-dragger.html">
-                      <span class="site-menu-title">Table Dragger</span>
-                      <div class="site-menu-label">
-                        <span class="badge badge badge-warning badge-round">new</span>
-                      </div>
-                    </a>
-                  </li>
                 </ul>
               </li>
+              <!-- End tables Navbar -->
+              <!-- RFP -->
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                   <i class="site-menu-icon wb-pie-chart" aria-hidden="true"></i>
-                  <span class="site-menu-title">Chart</span>
+                  <span class="site-menu-title">RFP</span>
                   <span class="site-menu-arrow"></span>
                 </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
                     <a class="animsition-link" href="charts/chartjs.html">
-                      <span class="site-menu-title">Chart.js</span>
+                      <span class="site-menu-title">Request Lender</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="charts/gauges.html">
-                      <span class="site-menu-title">Gauges</span>
+                      <span class="site-menu-title">Request Marketing</span>
                     </a>
+                  </li>
+                  <li class="site-menu-item has-sub">
+                    <a href="javascript:void(0)">
+                      <span class="site-menu-title">Seller Journey</span>
+                      <span class="site-menu-arrow"></span>
+                    </a>
+                    <ul class="site-menu-sub">
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-400.html">
+                          <span class="site-menu-title">Seller - Steps Management</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-403.html">
+                          <span class="site-menu-title">Seller - Content Management</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-404.html">
+                          <span class="site-menu-title">Seller - Questions</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-500.html">
+                          <span class="site-menu-title">Seller - Service Proposals</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-503.html">
+                          <span class="site-menu-title">Seller - Explore Options Choice</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-503.html">
+                          <span class="site-menu-title">Seller - Broker Request Management (Step 2)</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-503.html">
+                          <span class="site-menu-title">Seller - Requests For Proposal</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="site-menu-item has-sub">
+                    <a href="javascript:void(0)">
+                      <span class="site-menu-title">Buyer Journey</span>
+                      <span class="site-menu-arrow"></span>
+                    </a>
+                    <ul class="site-menu-sub">
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-400.html">
+                          <span class="site-menu-title">Buyer - Self-prequals</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-403.html">
+                          <span class="site-menu-title">Buyer - Self-prequals Result</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-404.html">
+                          <span class="site-menu-title">Buyer - Schedule Lender Consultations</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-500.html">
+                          <span class="site-menu-title">Buyer - Requests For Proposal</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-503.html">
+                          <span class="site-menu-title">Buyer FAQs Content</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="charts/peity.html">
+                          <span class="site-menu-title">Buyer - Helper Videos</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="charts/sparkline.html">
+                          <span class="site-menu-title">Buyer - Steps Management</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="charts/morris.html">
+                          <span class="site-menu-title">Buyer - Content Management</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="charts/chartist.html">
+                          <span class="site-menu-title">Buyer - Question Management</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="charts/rickshaw.html">
+                          <span class="site-menu-title">Buyer - Request Pre Approval</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="charts/pie-progress.html">
+                          <span class="site-menu-title">Buyer - Closing Timeline</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="charts/c3.html">
+                          <span class="site-menu-title">Buyer - Hire User</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-503.html">
+                          <span class="site-menu-title">Buyer - Signature Management</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-503.html">
+                          <span class="site-menu-title">Buyer - Package Option</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="pages/error-503.html">
+                          <span class="site-menu-title">Buyer - Package Option Order</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="charts/flot.html">
-                      <span class="site-menu-title">Flot</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="charts/peity.html">
-                      <span class="site-menu-title">Peity</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="charts/sparkline.html">
-                      <span class="site-menu-title">Sparkline</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="charts/morris.html">
-                      <span class="site-menu-title">Morris</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="charts/chartist.html">
-                      <span class="site-menu-title">Chartist.js</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="charts/rickshaw.html">
-                      <span class="site-menu-title">Rickshaw</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="charts/pie-progress.html">
-                      <span class="site-menu-title">Pie Progress</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="charts/c3.html">
-                      <span class="site-menu-title">C3</span>
+                      <span class="site-menu-title">RFP Settings</span>
                     </a>
                   </li>
                 </ul>
               </li>
+              <!-- End RFP Navbar -->
+              <!-- Other -->
+              <li class="site-menu-item has-sub">
+                <a href="javascript:void(0)">
+                  <i class="site-menu-icon wb-extension" aria-hidden="true"></i>
+                  <span class="site-menu-title">Other</span>
+                  <span class="site-menu-arrow"></span>
+                </a>
+                <ul class="site-menu-sub">
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/data.html">
+                      <span class="site-menu-title">Unprocessed Appointments</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Contact</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Onboarding Screens</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Articles</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Testimonial</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Dynamic Link</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Faqs</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Challenges</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Restaurants</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">API KEY Management</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="widgets/blog.html">
+                      <span class="site-menu-title">Media</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- End Other Navbar -->
             </ul>
           </div>
         </div>
@@ -2145,55 +1781,51 @@
           href="https://themeforest.net/user/creation-studio">Creation Studio</a>
       </div>
     </footer>
-    <!-- Core  -->
-    <script
-      src="../../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
-    <script src="../../global/vendor/jquery/jquery.js"></script>
-    <script src="../../global/vendor/popper-js/umd/popper.min.js"></script>
-    <script src="../../global/vendor/bootstrap/bootstrap.js"></script>
-    <script src="../../global/vendor/animsition/animsition.js"></script>
-    <script src="../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
-    <script src="../../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
-    <script src="../../global/vendor/asscrollable/jquery-asScrollable.js"></script>
-    <script src="../../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
-    <!-- Plugins -->
-    <script src="../../global/vendor/switchery/switchery.js"></script>
-    <script src="../../global/vendor/intro-js/intro.js"></script>
-    <script src="../../global/vendor/screenfull/screenfull.js"></script>
-    <script src="../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
-    <script src="../../global/vendor/skycons/skycons.js"></script>
-    <script src="../../global/vendor/chartist/chartist.min.js"></script>
-    <script
-      src="../../global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script>
-    <script src="../../global/vendor/aspieprogress/jquery-asPieProgress.min.js"></script>
-    <script src="../../global/vendor/jvectormap/jquery-jvectormap.min.js"></script>
-    <script
-      src="../../global/vendor/jvectormap/maps/jquery-jvectormap-au-mill-en.js"></script>
-    <script src="../../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
-    <!-- Scripts -->
-    <script src="../../global/js/Component.js"></script>
-    <script src="../../global/js/Plugin.js"></script>
-    <script src="../../global/js/Base.js"></script>
-    <script src="../../global/js/Config.js"></script>
-
-    <script src="../assets/js/Section/Menubar.js"></script>
-    <script src="../assets/js/Section/GridMenu.js"></script>
-    <script src="../assets/js/Section/Sidebar.js"></script>
-    <script src="../assets/js/Section/PageAside.js"></script>
-    <script src="../assets/js/Plugin/menu.js"></script>
-
-    <script src="../../global/js/config/colors.js"></script>
-    <script src="../assets/js/config/tour.js"></script>
-    <script>Config.set('assets', '../assets');</script>
-
-    <!-- Page -->
-    <script src="../assets/js/Site.js"></script>
-    <script src="../../global/js/Plugin/asscrollable.js"></script>
-    <script src="../../global/js/Plugin/slidepanel.js"></script>
-    <script src="../../global/js/Plugin/switchery.js"></script>
-    <script src="../../global/js/Plugin/matchheight.js"></script>
-    <script src="../../global/js/Plugin/jvectormap.js"></script>
-
-    <script src="../assets/examples/js/dashboard/v1.js"></script>
+     <!-- Core  -->
+     <script
+     src="../../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+   <script src="../../global/vendor/jquery/jquery.js"></script>
+   <script src="../../global/vendor/popper-js/umd/popper.min.js"></script>
+   <script src="../../global/vendor/bootstrap/bootstrap.js"></script>
+   <script src="../../global/vendor/animsition/animsition.js"></script>
+   <script src="../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+   <script src="../../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+   <script src="../../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+   <script src="../../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+   <!-- Plugins -->
+   <script src="../../global/vendor/switchery/switchery.js"></script>
+   <script src="../../global/vendor/intro-js/intro.js"></script>
+   <script src="../../global/vendor/screenfull/screenfull.js"></script>
+   <script src="../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+   <script src="../../global/vendor/skycons/skycons.js"></script>
+   <script src="../../global/vendor/chartist/chartist.min.js"></script>
+   <script
+     src="../../global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script>
+   <script src="../../global/vendor/aspieprogress/jquery-asPieProgress.min.js"></script>
+   <script src="../../global/vendor/jvectormap/jquery-jvectormap.min.js"></script>
+   <script
+     src="../../global/vendor/jvectormap/maps/jquery-jvectormap-au-mill-en.js"></script>
+   <script src="../../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+   <!-- Scripts -->
+   <script src="../../global/js/Component.js"></script>
+   <script src="../../global/js/Plugin.js"></script>
+   <script src="../../global/js/Base.js"></script>
+   <script src="../../global/js/Config.js"></script>
+   <script src="../assets/js/Section/Menubar.js"></script>
+   <script src="../assets/js/Section/GridMenu.js"></script>
+   <script src="../assets/js/Section/Sidebar.js"></script>
+   <script src="../assets/js/Section/PageAside.js"></script>
+   <script src="../assets/js/Plugin/menu.js"></script>
+   <script src="../../global/js/config/colors.js"></script>
+   <script src="../assets/js/config/tour.js"></script>
+   <script>Config.set('assets', '../assets');</script>
+   <!-- Page -->
+   <script src="../assets/js/Site.js"></script>
+   <script src="../../global/js/Plugin/asscrollable.js"></script>
+   <script src="../../global/js/Plugin/slidepanel.js"></script>
+   <script src="../../global/js/Plugin/switchery.js"></script>
+   <script src="../../global/js/Plugin/matchheight.js"></script>
+   <script src="../../global/js/Plugin/jvectormap.js"></script>
+   <script src="../assets/examples/js/dashboard/v1.js"></script>
   </body>
 </html>
