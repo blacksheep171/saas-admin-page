@@ -2,6 +2,9 @@ $(function() {
     "use strict";
     $(function() {
             $(".preloader").fadeOut();
+            // $("#header").load("./layouts/header/header.html"); 
+            // $("#sidebar").load("./layouts/sidebar/sidebar.html"); 
+            $("#footer").load("./layouts/footer/footer.html"); 
         }),
 
         jQuery(document).on("click", ".mega-dropdown", function(i) {
