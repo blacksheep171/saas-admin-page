@@ -1317,6 +1317,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 	width: 280px;
 	height: 70px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+	
 }
 .brand-logo a{
 	display: flex;
