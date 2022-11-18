@@ -1,6 +1,6 @@
-<?php include ("./header.php");?>
+<?php include ("./pages/template/header.php");?>
     <!-- BEGIN: Main Menu-->
-<?php include ("./sidebar.php");?>
+<?php include ("./pages/template/sidebar.php");?>
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
@@ -962,10 +962,7 @@
     <!-- End: Customizer-->
 
     <!-- Buynow Button-->
-    <div class="buy-now"><a href="https://dev.homing.com" target="_blank" class="btn btn-danger">Home</a>
-
-    </div>
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
-    <?php include("./footer.php");?>
+    <?php include("./pages/template/footer.php");?>

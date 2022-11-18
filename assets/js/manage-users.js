@@ -2,9 +2,9 @@ $((function() {
     "use strict";
     var t = $(".invoice-list-table")
       , a = "../../../app-assets/"
-      , e = "./app/app-invoice-preview.html"
-      , n = "./app/app-invoice-add.html"
-      , s = "./app/app-invoice-edit.html";
+      , e = "../../pages/actions/table-user.php"
+      , n = "../../pages/actions/form-user.php"
+      , s = "../../pages/actions/form-user.php";
     if ("laravel" === $("body").attr("data-framework") && (a = $("body").attr("data-asset-path"),
     e = a + "app/invoice/preview",
     n = a + "app/invoice/add",
