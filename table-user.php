@@ -17,10 +17,10 @@
     <div class="col-12">
       <div class="card invoice-list-wrapper">
         <div class="card-datatable table-responsive">
-          <table class="invoice-list-table table">
+          <table class="users-table table">
             <thead>
               <tr>
-                <th>#</th>
+                <th>ID</th>
                 <th>Avatar</th>
                 <th class="text-truncate">First Name</th>
                 <th>Last Name</th>
