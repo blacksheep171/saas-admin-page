@@ -2,35 +2,46 @@ $((function() {
     "use strict";
     var t = $(".invoice-list-table")
       , a = "../../../app-assets/"
-      , e = "app-invoice-preview.html"
-      , n = "app-invoice-add.html"
-      , s = "app-invoice-edit.html";
+      , e = "./app/app-invoice-preview.html"
+      , n = "./app/app-invoice-add.html"
+      , s = "./app/app-invoice-edit.html";
     if ("laravel" === $("body").attr("data-framework") && (a = $("body").attr("data-asset-path"),
     e = a + "app/invoice/preview",
     n = a + "app/invoice/add",
     s = a + "app/invoice/edit"),
     t.length)
         t.DataTable({
-            ajax: a + "data/invoice-list.json",
+            ajax:"https://reqres.in/api/users",
             autoWidth: !1,
+            // columns: [{
+            //     data: "responsive_id"
+            // }, {
+            //     data: "invoice_id"
+            // }, {
+            //     data: "invoice_status"
+            // }, {
+            //     data: "issued_date"
+            // }, {
+            //     data: "client_name"
+            // }, {
+            //     data: "total"
+            // }, {
+            //     data: "balance"
+            // }, {
+            //     data: "invoice_status"
+            // }, {
+            //     data: ""
+            // }],
             columns: [{
-                data: "responsive_id"
+                data: "id"
             }, {
-                data: "invoice_id"
+                data: "avatar"
             }, {
-                data: "invoice_status"
+                data: "first_name"
             }, {
-                data: "issued_date"
+                data: "last_name"
             }, {
-                data: "client_name"
-            }, {
-                data: "total"
-            }, {
-                data: "balance"
-            }, {
-                data: "invoice_status"
-            }, {
-                data: ""
+                data: "email"
             }],
             columnDefs: [{
                 className: "control",
@@ -40,89 +51,48 @@ $((function() {
                 targets: 1,
                 width: "46px",
                 render: function(t, a, n, s) {
-                    var i = n.invoice_id;
+                    var i = n.id;
                     return '<a class="fw-bold" href="' + e + '"> #' + i + "</a>"
                 }
             }, {
                 targets: 2,
-                width: "42px",
-                render: function(t, a, e, n) {
-                    var s = e.invoice_status
-                      , i = e.due_date
-                      , o = {
-                        Sent: {
-                            class: "bg-light-secondary",
-                            icon: "send"
-                        },
-                        Paid: {
-                            class: "bg-light-success",
-                            icon: "check-circle"
-                        },
-                        Draft: {
-                            class: "bg-light-primary",
-                            icon: "save"
-                        },
-                        Downloaded: {
-                            class: "bg-light-info",
-                            icon: "arrow-down-circle"
-                        },
-                        "Past Due": {
-                            class: "bg-light-danger",
-                            icon: "info"
-                        },
-                        "Partial Payment": {
-                            class: "bg-light-warning",
-                            icon: "pie-chart"
-                        }
-                    };
-                    return "<span data-bs-toggle='tooltip' data-bs-html='true' title='<span>" + s + '<br> <span class="fw-bold">Balance:</span> ' + e.balance + '<br> <span class="fw-bold">Due Date:</span> ' + i + "</span>'><div class=\"avatar avatar-status " + o[s].class + '"><span class="avatar-content">' + feather.icons[o[s].icon].toSvg({
-                        class: "avatar-icon"
-                    }) + "</span></div></span>"
-                }
-            }, {
-                targets: 3,
-                responsivePriority: 4,
+                responsivePriority: 3,
                 width: "270px",
                 render: function(t, e, n, s) {
-                    var i = n.client_name
+                    var i = n.first_name
                       , o = n.email
                       , l = n.avatar
                       , d = ["success", "danger", "warning", "info", "primary", "secondary"][Math.floor(6 * Math.random())]
-                      , r = (i = n.client_name).match(/\b\w/g) || [];
+                      , r = (i = n.first_name).match(/\b\w/g) || [];
                     if (r = ((r.shift() || "") + (r.pop() || "")).toUpperCase(),
                     l)
-                        var c = '<img  src="' + a + "images/avatars/" + l + '" alt="Avatar" width="32" height="32">';
+                        var c = '<img  src="' + l + '" alt="Avatar" width="32" height="32">';
                     else
                         c = '<div class="avatar-content">' + r + "</div>";
                     return '<div class="d-flex justify-content-left align-items-center"><div class="avatar-wrapper"><div class="avatar' + ("" === l ? " bg-light-" + d + " " : " ") + 'me-50">' + c + '</div></div><div class="d-flex flex-column"><h6 class="user-name text-truncate mb-0">' + i + '</h6><small class="text-truncate text-muted">' + o + "</small></div></div>"
                 }
             }, {
+                targets: 3,
+                width: "73px",
+                render: function(t, a, e, n) {
+                    var s = e.first_name;
+                    return '<span class="d-none">' + s + "</span>" + s
+                }
+            }, 
+            {
                 targets: 4,
                 width: "73px",
                 render: function(t, a, e, n) {
-                    var s = e.total;
-                    return '<span class="d-none">' + s + "</span>$" + s
-                }
-            }, {
-                targets: 5,
-                width: "130px",
-                render: function(t, a, e, n) {
-                    var s = new Date(e.due_date);
-                    return '<span class="d-none">' + moment(s).format("YYYYMMDD") + "</span>" + moment(s).format("DD MMM YYYY")
-                }
-            }, {
-                targets: 6,
-                width: "98px",
-                render: function(t, a, e, n) {
-                    var s = e.balance;
-                    if (0 === s) {
-                        return '<span class="badge rounded-pill badge-light-success" text-capitalized> Paid </span>'
-                    }
+                    var s = e.last_name;
                     return '<span class="d-none">' + s + "</span>" + s
                 }
-            }, {
-                targets: 7,
-                visible: !1
+            },{
+                targets: 5,
+                width: "73px",
+                render: function(t, a, e, n) {
+                    var s = e.email;
+                    return '<span class="d-none">' + s + "</span>" + s
+                }
             }, {
                 targets: -1,
                 title: "Actions",
@@ -168,7 +138,7 @@ $((function() {
                 details: {
                     display: $.fn.dataTable.Responsive.display.modal({
                         header: function(t) {
-                            return "Details of " + t.data().client_name
+                            return "Details of " + t.data().email
                         }
                     }),
                     type: "column",
@@ -183,7 +153,7 @@ $((function() {
             },
             initComplete: function() {
                 $(document).find('[data-bs-toggle="tooltip"]').tooltip(),
-                this.api().columns(7).every((function() {
+                this.api().columns(6).every((function() {
                     var t = this
                       , a = $('<select id="UserRole" class="form-select ms-50 text-capitalize"><option value=""> Select Status </option></select>').appendTo(".invoice_status").on("change", (function() {
                         var a = $.fn.dataTable.util.escapeRegex($(this).val());
